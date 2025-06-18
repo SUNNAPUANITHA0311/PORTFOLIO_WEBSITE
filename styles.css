@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  background: #0f172a;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 260px;
+  background: #0f172a;
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+h2 {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #60a5fa;
+}
+
+.nav-links {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.nav-links a {
+  display: block;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  color: #cbd5e1;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.nav-links a:hover {
+  background: #1e293b;
+  color: white;
+}
+
+.nav-links i {
+  margin-right: 0.7rem;
+}
+
+/* Main content */
+.main-content {
+  margin-left: 260px;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 0 4rem;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background: url("https://pics.craiyon.com/2024-02-10/F54xREi7TmaSPBMi94b26A.webp")
+    center center/cover no-repeat fixed;
+}
+
+/* Home Section (full viewport) */
+.home-section {
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Overlay for typed text in home */
+.overlay {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem 3rem;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.overlay h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.overlay h2 {
+  font-size: 2rem;
+}
+
+.cursor {
+  display: inline-block;
+  color: #60a5fa;
+  font-weight: bold;
+}
+
+/* Sections styling */
+.section {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 4rem 3rem;
+  border-radius: 12px;
+  max-width: 900px;
+  color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  backdrop-filter: brightness(0.8);
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #60a5fa;
+}
+
+.section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #e0e7ff;
+}
+
+/* Skills styling */
+.skills .skill {
+  margin-bottom: 1.2rem;
+}
+
+.skills label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #93c5fd;
+}
+
+.skill-bar {
+  background-color: #1e293b;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 24px;
+}
+
+.skill-bar div {
+  background-color: #3b82f6;
+  height: 100%;
+  color: white;
+  text-align: right;
+  padding-right: 0.7rem;
+  line-height: 24px;
+  font-weight: 600;
+}
+
