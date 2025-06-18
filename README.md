@@ -12,3 +12,4 @@ Projects, certifications, and experience sections
 Contact form and social links
 
 🔧 Tech Stack: HTML | CSS | JavaScript
+ Live Demo:https://jocular-pie-c406d0.netlify.app/
